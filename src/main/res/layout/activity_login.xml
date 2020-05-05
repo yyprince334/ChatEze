@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/email_edittext_login"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_username"
+        android:ems="10"
+        android:hint="Email"
+        android:fontFamily="@font/nixie_one"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+    android:id="@+id/password_edittext_login"
+    android:layout_width="0dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bg_txt_password"
+    android:ems="10"
+    android:fontFamily="@font/nixie_one"
+    android:paddingLeft="60dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    app:layout_constraintEnd_toEndOf="@+id/email_edittext_login"
+    app:layout_constraintStart_toStartOf="@+id/email_edittext_login"
+    app:layout_constraintTop_toBottomOf="@+id/email_edittext_login" />
+
+    <Button
+        android:id="@+id/login_button_login"
+        android:layout_width="194dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/carter_one"
+        android:shadowColor="#40000000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowRadius="20"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_login"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_login"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_login" />
+
+    <TextView
+        android:id="@+id/back_to_register_textview"
+        android:layout_width="148dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/sniglet"
+        android:text="Don't have an account"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login_button_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_button_login"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="253dp"
+        android:layout_height="237dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat_image_add" />
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="281dp"
+        android:layout_height="71dp"
+        android:text="Welcome Back!"
+        android:textAppearance="@style/welcome_bac"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/login_to_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login to your existing account of ChatEze"
+        android:textAppearance="@style/login_to_yo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_back" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_to_your"
+        app:srcCompat="@android:drawable/screen_background_light" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_to_your"
+        app:srcCompat="@drawable/icons8_new_post_24" />
+
+    <TextView
+        android:id="@+id/Sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/carter_one"
+        android:text="Sign Up"
+        android:textColor="#263AF3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back_to_register_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/back_to_register_textview"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

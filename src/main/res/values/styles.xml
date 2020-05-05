@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarTabTextStyle">@font/carter_one</item>
+        <item name="colorPrimary">#263AF3</item>
+        <item name="colorPrimaryDark">#2435D1</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+
+
+    <style name="let_s_get_s">
+            <item name="android:textSize">36sp</item>
+            <item name="android:textColor">#000000</item>
+            <item name="android:shadowColor">#40000000</item>
+            <item name="android:shadowDx">0</item>
+            <item name="android:shadowDy">4</item>
+            <item name="android:shadowRadius">12</item>
+            <item name="fontFamily">@font/carter_one</item>
+        </style>
+
+    <style name="create_an_a">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#C7000000</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+        <item name="fontFamily">@font/handlee</item>
+    </style>
+
+    <style name="welcome_bac">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+        <item name="fontFamily">@font/carter_one</item>
+    </style>
+    <!-- strings.xml -->
+    <string name="welcome_bac">Welcome Back!</string>
+
+
+
+    <style name="login_to_yo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="fontFamily">@font/handlee</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+
+
+
+    <!-- strings.xml -->
+    <string name="login_to_yo">
+
+    Login to your existing account of Chateze
+    </string>
+
+
+
+
+
+</resources>

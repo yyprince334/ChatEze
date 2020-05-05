@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/username_edittext_register"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_username"
+        android:ems="10"
+        android:fontFamily="@font/nixie_one"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectphoto_button_register" />
+
+    <EditText
+        android:id="@+id/email_edittext_register"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_username"
+        android:ems="10"
+        android:fontFamily="@font/nixie_one"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/username_edittext_register"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/username_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/username_edittext_register" />
+
+    <EditText
+        android:id="@+id/password_edittext_register"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_txt_password"
+        android:ems="10"
+        android:fontFamily="@font/nixie_one"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_edittext_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext_register" />
+
+    <Button
+        android:id="@+id/register_button_register"
+        android:layout_width="194dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/carter_one"
+        android:shadowColor="#40000000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowRadius="20"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_register"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_register"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_register" />
+
+    <TextView
+        android:id="@+id/already_have_account_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Already have an account?"
+        android:fontFamily="@font/sniglet"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/register_button_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_button_register"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_register" />
+
+    <Button
+        android:id="@+id/selectphoto_button_register"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/link_man"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selectphoto_imageview_register"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectphoto_button_register"
+        app:layout_constraintEnd_toEndOf="@+id/selectphoto_button_register"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/selectphoto_button_register"
+        app:layout_constraintTop_toTopOf="@+id/selectphoto_button_register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lets_get_started"
+        android:layout_width="352dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="Let's Get Started!"
+        android:textAppearance="@style/let_s_get_s"
+        app:layout_constraintBottom_toTopOf="@+id/selectphoto_button_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
+        android:id="@+id/create_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/handlee"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="create an account of chateze to get all feature"
+        android:textAppearance="@style/create_an_a"
+        app:layout_constraintEnd_toEndOf="@+id/lets_get_started"
+        app:layout_constraintStart_toStartOf="@+id/lets_get_started"
+        app:layout_constraintTop_toBottomOf="@+id/lets_get_started" />
+
+    <TextView
+        android:id="@+id/SignIn_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:paddingLeft="5dp"
+        android:text="Sign In"
+        android:textColor="#263AF3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/already_have_account_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/already_have_account_text_view"
+        app:layout_constraintTop_toTopOf="@+id/already_have_account_text_view" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="23dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edittext_register"
+        app:srcCompat="@android:drawable/screen_background_light" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username_edittext_register"
+        app:srcCompat="@drawable/icons8_new_post_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
