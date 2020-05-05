@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016069529389",
+    "firebase_url": "https://chateze-cd709.firebaseio.com",
+    "project_id": "chateze-cd709",
+    "storage_bucket": "chateze-cd709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016069529389:android:59b319a0c74fcf1a287da4",
+        "android_client_info": {
+          "package_name": "com.start.chateze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016069529389-15497lceovo295i4qvi4ka2ogcn4tmr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.start.chateze",
+            "certificate_hash": "d281d7e59bdb9fb018273782989154a88b17c7cb"
+          }
+        },
+        {
+          "client_id": "1016069529389-mqqoa1ju25li1soeopuecu7abmr97fvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUpBSe4Iym84J1ctoAnn-KrklOc4TAnkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016069529389-mqqoa1ju25li1soeopuecu7abmr97fvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
