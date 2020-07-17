@@ -1,2 +1,2 @@
 # ChatEze
-A chat application for basic messaging process
+A chat application for real time messaging.
